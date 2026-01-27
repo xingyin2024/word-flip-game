@@ -73,6 +73,7 @@ word-flip-game/
 ├─ index.html
 ├─ package.json
 └─ README.md
+```
 
 ---
 
@@ -80,4 +81,7 @@ word-flip-game/
 
 MIT License
 可自由用于教学、学习和非商业用途。
+
+```
+
 ```
