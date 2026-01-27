@@ -1,0 +1,44 @@
+/* === Global responsive baseline === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  /* 不要用 flex 去“强行居中”整个页面，让 App 自己决定布局 */
+  display: block;
+  min-width: 320px;
+
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    "Apple Color Emoji",
+    "Segoe UI Emoji";
+  line-height: 1.5;
+
+  /* 让 App 自己控制背景，这里保持透明/默认 */
+  background: transparent;
+  color: #111827;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
