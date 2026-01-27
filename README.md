@@ -1,16 +1,83 @@
-# React + Vite
+# 🎴 随机出词卡（Word Flip Game）
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+一个为儿童中文教学设计的网页小游戏，用于 **识字、认读、生字复习与课堂互动**。  
+支持从 JSON 词库加载内容，操作简单，适合课堂投影、平板和电脑使用。
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ 功能特点
 
-## React Compiler
+- 🎲 **随机出词，不重复**（一轮内）
+- 📚 **多词库切换**（通过 JSON 文件管理）
+- 🧠 「正确 / 错误」即时反馈与统计
+- 🎨 词卡颜色随机变化，儿童友好、吸引注意力
+- 🧩 清晰的「开始页 / 答题页」模式区分
+- 🔄 一键「重开 / 洗牌」，快速进入新一轮
+- 📱 响应式设计，支持投影 / 平板 / 桌面浏览器
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🖼️ 使用场景
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 小学中文课堂（识字、认读、生字复习）
+- 课前热身 / 课中互动 / 课后巩固
+- 一对一教学或小组抢答
+- 家庭中文学习
+
+---
+
+## 👩‍🏫 教学设计说明
+
+词库与教学内容解耦，教师可随时调整 JSON 文件
+
+「开始页」帮助学生进入任务状态
+
+「正确 / 错误」按钮颜色明确，降低认知负担
+
+随机配色与翻页动画增强专注力与参与感
+
+---
+
+## 🛠️ 本地运行
+
+npm install
+npm run dev
+浏览器打开终端提示的地址（通常是 http://localhost:5173）。
+
+---
+
+## 📦 构建生产版本
+
+npm run build
+生成的静态文件在 dist/ 目录。
+
+---
+
+## 🚀 在线体验（部署后填写）
+
+> GitHub Pages 地址：  
+> 👉 _（部署完成后填写）_
+
+---
+
+## 📂 项目结构
+
+```text
+word-flip-game/
+├─ public/
+│  └─ words/
+│     ├─ 复习.json
+│     └─ 生字词.json
+├─ src/
+│  └─ App.jsx
+├─ index.html
+├─ package.json
+└─ README.md
+
+---
+
+## 📄 License
+
+MIT License
+可自由用于教学、学习和非商业用途。
+```
