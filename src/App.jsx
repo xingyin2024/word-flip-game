@@ -1,9 +1,11 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 
-/** ====== 词库 JSON 配置（按钮名 -> public 路径） ====== */
+/** ====== 词库 JSON 配置（按钮名 -> public 路径）适配本地 dev + GitHub Pages ====== */
+const BASE = import.meta.env.BASE_URL;
+
 const DICTS = [
-  { label: "复习", url: "/words/复习.json" },
-  { label: "生字词", url: "/words/生字词.json" },
+  { label: "复习", url: `${BASE}words/复习.json` },
+  { label: "生字词", url: `${BASE}words/生字词.json` },
 ];
 
 /** ====== 儿童友好颜色 ====== */
